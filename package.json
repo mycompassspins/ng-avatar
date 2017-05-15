@@ -15,7 +15,13 @@
     "url": "https://github.com/mycompassspins/ng-avatar.git"
   },
   "files": [
-    "dist/"
+    "dist/avatar.component.js",
+    "dist/avatar.module.js",
+    "dist/avatar.service.js",
+    "dist/index.d.ts",
+    "dist/index.js",
+    "dist/package.json",
+    "dist/README.md"
   ],
   "private": false,
   "dependencies": {
