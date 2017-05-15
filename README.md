@@ -1,5 +1,7 @@
 # NgAvatar
 
+This library is an Angular wrapper around the [avatar-initials](https://github.com/MatthewCallis/avatar) library by [@MatthewCallis](https://github.com/MatthewCallis).
+
 ## Usage
 
 ### Component + Service
