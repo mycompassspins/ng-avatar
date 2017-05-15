@@ -2,7 +2,7 @@
  * Created by justin on 5/15/17.
  */
 
-import { ModuleWithProviders } from '@angular/core'
+import { ModuleWithProviders, EventEmitter } from '@angular/core'
 import * as AvatarInitials from 'avatar-initials/build/avatar.js'
 
 declare type AvatarType = 'initials'|'gravatar';
@@ -21,4 +21,17 @@ export declare class AvatarService
 	private _getRandomColorScheme():any;
 	private _getRandomGravatar():GravatarType;
 	private _randomNoRepeats(array:Array<any>):string|any;
+}
+
+export declare class AvatarComponent
+{
+	updatingInitials:boolean;
+	updatingGravatar:boolean;
+
+	name:string;
+	email:string;
+	onSuccess:EventEmitter<string>;
+	private avatar:AvatarService;
+
+	Avatar(type:'initials'|'gravatar'):EventEmitter<string>;
 }
