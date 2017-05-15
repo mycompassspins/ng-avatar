@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
 import { AvatarService } from './avatar.service'
 
 @Component({
-	selector: 'gravatar',
+	selector: 'ng-avatar',
 	template: `
 		<span class="control" (click)="Avatar('initials')">
 			<small>
