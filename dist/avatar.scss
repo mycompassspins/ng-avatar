@@ -4,9 +4,9 @@ span.control {
 	cursor: pointer;
 	opacity: 0.7;
 	transition: all 0.3s ease;
-}
 
-span.control:hover {
-	opacity: 1;
-	transition: all 0.3s ease;
+	&:hover {
+		opacity: 1;
+		transition: all 0.3s ease;
+	}
 }

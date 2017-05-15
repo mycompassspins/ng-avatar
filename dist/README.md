@@ -86,10 +86,6 @@ export class AppComponent
 
 `gulp build`
 
-`cd dist`
-
-`npm version [newversion]`
-
 `npm publish`
 
 # Development

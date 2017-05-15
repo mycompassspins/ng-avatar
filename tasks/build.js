@@ -19,6 +19,9 @@ module.exports = (gulp) =>
 		gulp.src('src/app/avatar/index.d.ts')
 			.pipe(gulp.dest('dist'));
 
+		gulp.src('src/app/avatar/avatar.scss')
+			.pipe(gulp.dest('dist'));
+
 		gulp.src('README.md')
 			.pipe(gulp.dest('dist'));
 
