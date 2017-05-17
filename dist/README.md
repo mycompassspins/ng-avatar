@@ -10,7 +10,7 @@ This library is an Angular wrapper around the [avatar-initials](https://github.c
 
 ```typescript
 import { NgModule } from '@angular/core'
-import { NgAvatarModule, AvatarComponent, AvatarService } from 'ng-avatar'
+import { NgAvatarModule, AvatarService } from 'ng-avatar'
 import { AppComponent } from 'app.component'
 
 // Optional styles
@@ -18,8 +18,7 @@ import 'ng-avatar/avatar.scss'
 
 @NgModule({
 	declarations: [
-		AppComponent,
-		AvatarComponent
+		AppComponent
 	],
 	imports: [
 		NgAvatarModule.forRoot()
@@ -43,7 +42,7 @@ import { Component } from '@angular/core'
 	selector: 'my-app',
 	template: `
 		<img alt="" src="" id="avatar-image">
-		<ng-gravatar name="John Doe" email="john@johndoe.com" (onSuccess)="setImage($event)></ng-gravatar>
+		<ng-avatar name="John Doe" email="john@johndoe.com" (onSuccess)="setImage($event)></ng-gravatar>
 	`
 })
 export class AppComponent
@@ -85,6 +84,10 @@ export class AppComponent
 # Build for NPM
 
 `gulp build`
+
+`cd dist`
+
+`npm version [newversion]`
 
 `npm publish`
 
