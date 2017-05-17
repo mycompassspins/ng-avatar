@@ -38,6 +38,12 @@ export class AvatarComponent
 
 	Avatar(type:'initials'|'gravatar')
 	{
+		if (type === 'initials' && !this.name)
+			throw new ReferenceError('Name is required in order to generate initials avatar');
+
+		if (type === 'gravatar' && !this.email)
+			throw new ReferenceError('Email is required in order to generate Gravatar');
+
 		type === 'initials' ? this.updatingInitials = true : this.updatingGravatar = true;
 		const src = this.avatar.Avatar(type, this.name, this.email);
 		type === 'initials' ? this.updatingInitials = false : this.updatingGravatar = false;

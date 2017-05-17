@@ -5,19 +5,18 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { AppComponent } from './app.component'
-import { AvatarComponent } from './avatar/avatar.component'
-import { AvatarService } from './avatar/avatar.service'
+import { NgAvatarModule } from './avatar'
 
 @NgModule({
 	declarations: [
-		AppComponent,
-		AvatarComponent
+		AppComponent
 	],
 	imports: [
-		BrowserModule
+		BrowserModule,
+		NgAvatarModule.forRoot()
 	],
 	providers: [
-		AvatarService
+
 	],
 	bootstrap: [AppComponent]
 })
