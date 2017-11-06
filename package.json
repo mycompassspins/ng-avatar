@@ -1,12 +1,12 @@
 {
   "name": "ng-avatar",
-  "version": "4.0.3",
+  "version": "4.0.2",
   "description": "An angular wrapper around the avatar-initials library",
   "license": "MIT",
   "scripts": {
     "build": "./bin/build.sh",
     "start": "rm -rf build && mkdir build && cp index.html build && cp favicon.ico build && node fuse.js",
-    "publish": "./bin/publish.sh"
+    "npmPublish": "./bin/publish.sh"
   },
   "repository": {
     "type": "git",
