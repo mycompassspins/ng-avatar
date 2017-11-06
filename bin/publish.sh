@@ -8,7 +8,7 @@ if [ "$VERSION" = "" ]; then
 fi
 
 npm version ${VERSION} ;
-npm run build ;
+./bin/build.sh ;
 cd dist ;
 npm publish ;
 
