@@ -1,7 +1,7 @@
+"use strict";
 /**
  * Created by justin on 5/15/17.
  */
-"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var avatar_component_1 = require("./avatar.component");
 exports.AvatarComponent = avatar_component_1.AvatarComponent;

@@ -1,7 +1,7 @@
+"use strict";
 /**
  * Created by justin on 5/15/17.
  */
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11,7 +11,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AvatarInitials = require("avatar-initials/build/avatar.js");
-var AvatarService = (function () {
+var AvatarService = /** @class */ (function () {
     function AvatarService() {
     }
     AvatarService.prototype.Avatar = function (type, name, email) {
@@ -86,9 +86,9 @@ var AvatarService = (function () {
         copy.splice(index, 1);
         return item;
     };
+    AvatarService = __decorate([
+        core_1.Injectable()
+    ], AvatarService);
     return AvatarService;
 }());
-AvatarService = __decorate([
-    core_1.Injectable()
-], AvatarService);
 exports.AvatarService = AvatarService;

@@ -5,7 +5,7 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { AppComponent } from './app.component'
-import { NgAvatarModule } from './avatar'
+import { NgAvatarModule } from '../lib/avatar.module'
 
 @NgModule({
 	declarations: [

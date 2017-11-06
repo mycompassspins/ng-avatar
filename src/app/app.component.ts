@@ -6,11 +6,23 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'app-root',
-	templateUrl: './app.component.html'
+	template: `
+		<h1>
+			{{ title }}
+		</h1>
+
+		<img src="" alt="" id="avatar">
+
+		<br>
+
+		<ng-avatar [name]="name" [email]="email" (onSuccess)="SetImage($event)"></ng-avatar>
+	`
 })
 export class AppComponent
 {
 	title = 'Ng Avatar';
+	name = 'Fake Person';
+	email = 'fake@example.com';
 
 	SetImage(src:string)
 	{
