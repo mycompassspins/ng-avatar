@@ -1,6 +1,6 @@
 {
   "name": "ng-avatar",
-  "version": "4.0.1",
+  "version": "4.0.3",
   "description": "An angular wrapper around the avatar-initials library",
   "license": "MIT",
   "scripts": {
