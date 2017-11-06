@@ -4,19 +4,20 @@
   "description": "An angular wrapper around the avatar-initials library",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && tsc -p tsconfig.dist.json && cp src/lib/index.d.ts dist && cp src/lib/avatar.scss dist",
-    "start": "rm -rf build && mkdir build && cp index.html build && cp favicon.ico build && node fuse.js"
+    "build": "./bin/build.sh",
+    "start": "rm -rf build && mkdir build && cp index.html build && cp favicon.ico build && node fuse.js",
+    "publish": "./bin/publish.sh"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mycompassspins/ng-avatar.git"
   },
   "files": [
-    "dist/avatar.component.js",
-    "dist/avatar.module.js",
-    "dist/avatar.service.js",
-    "dist/index.d.ts",
-    "dist/index.js",
+    "avatar.component.js",
+    "avatar.module.js",
+    "avatar.service.js",
+    "index.d.ts",
+    "index.js",
     "package.json",
     "README.md"
   ],
